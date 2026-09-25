@@ -1,0 +1,291 @@
+.explorer,
+.vpage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 0;
+  padding: 2px 3px 3px;
+  background: #c0c0c0;
+}
+
+.explorer-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.explorer-toolbar button {
+  min-width: 0;
+}
+
+.explorer-address {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.explorer-address-field {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 5px;
+  height: 22px;
+  padding: 0 5px;
+  background: #fff;
+  box-shadow: var(--border-field);
+}
+
+.explorer-list {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 2px;
+  background: #fff;
+  box-shadow: var(--border-field);
+}
+
+.explorer-list table {
+  width: 100%;
+}
+
+.explorer-list thead th {
+  height: 20px;
+  padding: 0 8px;
+  z-index: 1;
+}
+
+.explorer-list tbody td {
+  height: 22px;
+  padding: 0 8px;
+}
+
+.explorer-group th {
+  padding: 8px 8px 3px;
+  font-weight: bold;
+  color: #000080;
+  text-align: left;
+}
+
+.explorer-empty td {
+  color: #606060;
+  font-style: italic;
+}
+
+.explorer-list tbody tr[tabindex] {
+  cursor: default;
+  outline: none;
+}
+
+.explorer-list tbody tr[tabindex]:hover {
+  background: #ececec;
+}
+
+.explorer-list tbody tr.selected,
+.explorer-list tbody tr.selected:hover {
+  background: #000080;
+  color: #fff;
+}
+
+.explorer-list tbody tr[tabindex]:focus-visible td:first-child > * {
+  outline: 1px dotted currentColor;
+  outline-offset: 1px;
+}
+
+.explorer-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.explorer-name svg {
+  flex: none;
+}
+
+.explorer-role {
+  color: #404040;
+}
+
+.explorer-role.officer {
+  font-weight: bold;
+  color: inherit;
+}
+
+tr.selected .explorer-role {
+  color: inherit;
+}
+
+.explorer-numeric {
+  text-align: right;
+}
+
+.explorer-details {
+  flex: none;
+  max-height: 40%;
+  overflow: auto;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.explorer-details h3 {
+  margin: 0 0 2px;
+  font-size: 11px;
+}
+
+.explorer-details p {
+  margin: 0 0 4px;
+}
+
+.explorer-details p:last-child {
+  margin-bottom: 0;
+}
+
+.explorer-status {
+  display: flex;
+  gap: 2px;
+}
+
+.explorer-status span {
+  flex: 1;
+  min-width: 0;
+  padding: 3px 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-shadow: var(--border-status-field);
+}
+
+.explorer-status span:last-child {
+  flex: 0 1 auto;
+  padding-right: 18px;
+}
+
+.vpage {
+  gap: 10px;
+  overflow: auto;
+  padding: 10px 12px 14px;
+  line-height: 1.45;
+}
+
+.vpage-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vpage-header svg {
+  flex: none;
+}
+
+.vpage-header h1 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.vpage-header p {
+  margin: 2px 0 0;
+}
+
+.vpage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.vpage fieldset {
+  flex: none;
+  margin: 0;
+}
+
+.vfacts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 16px;
+  margin: 0;
+}
+
+.vfacts dt {
+  font-weight: bold;
+}
+
+.vfacts dd {
+  margin: 0;
+}
+
+.vdoc {
+  flex: none;
+  padding: 10px 14px 12px;
+  background: #fff;
+  box-shadow: var(--border-field);
+}
+
+.vdoc h2 {
+  margin: 14px 0 6px;
+  padding: 2px 6px;
+  background: #000080;
+  color: #fff;
+  font-size: 11px;
+}
+
+.vdoc h2:first-child {
+  margin-top: 0;
+}
+
+.vdoc h3 {
+  margin: 10px 0 4px;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.vdoc p,
+.vdoc ul,
+.vdoc ol {
+  margin: 0 0 8px;
+}
+
+.vdoc ul,
+.vdoc ol {
+  padding-left: 20px;
+}
+
+.vdoc a,
+.vcontacts a {
+  color: #0000ff;
+}
+
+.vdoc a:visited,
+.vcontacts a:visited {
+  color: #800080;
+}
+
+.vcontacts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vcontacts li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vcontact-badge {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 22px;
+  background: #c0c0c0;
+  box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+  font-weight: bold;
+}
+
+.vcontact-label {
+  min-width: 64px;
+  font-weight: bold;
+}

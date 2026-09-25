@@ -1,0 +1,8 @@
+[
+  { "name": "Adriana Z.", "role": "Co-President", "officer": true },
+  { "name": "Nathan L.", "role": "Co-President", "officer": true },
+  { "name": "Vatsal S.", "role": "Treasurer", "officer": true },
+  { "name": "Anika D.", "role": "Secretary", "officer": true },
+  { "name": "Viha S.", "role": "Historian", "officer": true },
+  { "name": "Nidhish K.", "role": "Ambassador", "officer": true }
+]

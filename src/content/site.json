@@ -1,0 +1,14 @@
+{
+  "members": {
+    "address": "C:\\CRHS\\Members"
+  },
+  "events": {
+    "address": "C:\\CRHS\\Events",
+    "intro": "Workshops, competitions, and hackathons. Updates go out on Remind (code: cinco-cs).",
+    "empty": "Nothing scheduled yet. Check back soon!"
+  },
+  "recycleBin": {
+    "address": "C:\\Recycled",
+    "intro": "Deleted, but never forgotten."
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "First Meeting",
+    "date": "2026-08-25",
+    "time": "2:45 PM",
+    "location": "Room 2225",
+    "description": "The first CS Club meeting of the year."
+  },
+  {
+    "title": "Intro Meeting",
+    "date": "2026-09-04",
+    "time": "",
+    "location": "Room 2225",
+    "description": "Meet the officers and learn what the club offers: CS lessons, member socials, hackathons and UIL, CSHS, and Girls Who Code."
+  },
+  {
+    "title": "Boba Bash",
+    "date": "TBA",
+    "time": "",
+    "location": "",
+    "description": "Code a website with Hack Club (no experience required), meet new people, and get free snacks and boba! More info coming via Remind."
+  }
+]

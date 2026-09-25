@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: #3a4448;
+  color: #000;
+}
+
+.screen-content {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+  font-family: "Pixelated MS Sans Serif", "MS Sans Serif", Tahoma, Geneva, sans-serif;
+  font-size: 11px;
+  -webkit-font-smoothing: none;
+  color: #000;
+  background: #000;
+}
+
+.screen-blank {
+  position: absolute;
+  inset: 0;
+  background: #008080;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.konami .desktop,
+.konami .mobile-shell {
+  animation: konami-hue 1.2s linear infinite;
+}
+
+@keyframes konami-hue {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition: none !important;
+  }
+}

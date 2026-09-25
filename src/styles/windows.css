@@ -1,0 +1,103 @@
+.app-window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.title-bar {
+  flex: none;
+  user-select: none;
+  touch-action: none;
+}
+
+.title-bar-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  margin-right: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title-bar-text span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title-bar-text svg {
+  flex: none;
+}
+
+
+.app-window-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  margin: 2px 0 0;
+}
+
+.window-loading {
+  margin: 12px;
+}
+
+.resize-grip {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 13px;
+  height: 13px;
+  cursor: nwse-resize;
+  touch-action: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' shape-rendering='crispEdges'%3E%3Cg fill='none'%3E%3Cpath d='M12 1L1 12M12 5L5 12M12 9L9 12' stroke='%23fff'/%3E%3Cpath d='M12 2L2 12M12 6L6 12M12 10L10 12' stroke='%23808080'/%3E%3C/g%3E%3C/svg%3E") no-repeat;
+}
+
+.message-box {
+  position: absolute;
+  z-index: 30;
+  left: 50%;
+  top: 42%;
+  translate: -50% -50%;
+  width: min(340px, calc(100% - 24px));
+}
+
+.message-box-body {
+  margin: 14px 12px 10px;
+}
+
+.message-box-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.message-box-content svg {
+  flex: none;
+}
+
+.message-box-icon.error {
+  color: #c00000;
+}
+
+.message-box-icon.warning {
+  color: #9a7400;
+}
+
+.message-box-icon.info {
+  color: #000080;
+}
+
+.message-box-text {
+  padding-top: 2px;
+  line-height: 1.45;
+}
+
+.message-box-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+}

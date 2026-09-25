@@ -1,0 +1,49 @@
+.mobile-root {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  height: 100dvh;
+  background: #008080;
+}
+
+.mobile-shell {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: #008080;
+}
+
+.mobile-window {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  margin: 6px;
+}
+
+.mobile-window h1.title-bar-text {
+  margin: 0;
+  padding: 2px 0;
+  font-size: 11px;
+  outline: none;
+}
+
+.mobile-shell .taskbar {
+  height: auto;
+  min-height: 30px;
+  padding-bottom: calc(2px + env(safe-area-inset-bottom));
+}
+
+.mobile-shell .taskbar button {
+  height: 26px;
+}
+
+.mobile-shell .start-menu {
+  bottom: calc(32px + env(safe-area-inset-bottom));
+}
+
+.mobile-shell .start-menu-items button {
+  height: 48px;
+  min-width: 200px;
+}

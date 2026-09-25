@@ -1,0 +1,53 @@
+{
+  "clockSpam": [
+    {
+      "title": "CLOCK.EXE",
+      "icon": "error",
+      "message": "CLOCK.EXE has performed an illegal operation: tried to make the meeting start on time.",
+      "buttons": ["OK", "Snooze"]
+    },
+    {
+      "title": "Time Zone Error",
+      "icon": "warning",
+      "message": "Clicking the clock does not make 2:45 PM arrive faster. We checked."
+    }
+  ],
+  "desktopSpam": [
+    {
+      "title": "Desktop",
+      "icon": "error",
+      "message": "There is nothing here. You have double-clicked nothing 10 times. Nothing is flattered.",
+      "buttons": ["OK", "Keep clicking"]
+    },
+    {
+      "title": "Explorer",
+      "icon": "warning",
+      "message": "StackOverflowException: too many double-clicks on the desktop. Try recursion instead."
+    }
+  ],
+  "emptyRecycleBin": {
+    "title": "Recycle Bin",
+    "icon": "error",
+    "message": "Cannot empty the Recycle Bin: node_modules is still being deleted. Estimated time remaining: 4,738 years."
+  },
+  "restoreRecycleBin": {
+    "title": "Restore",
+    "icon": "warning",
+    "message": "Are you sure? Some of these files were deleted for a reason. Mostly the one with FINAL in the name.",
+    "buttons": ["Yes", "Absolutely not"]
+  },
+  "konami": {
+    "title": "Cheat Code Accepted",
+    "icon": "info",
+    "message": "+30 lives, unlimited Wi-Fi, and zero merge conflicts. (Lives not valid during finals week.)",
+    "buttons": ["Nice"]
+  },
+  "blueScreen": {
+    "heading": "CRHS OS",
+    "paragraphs": [
+      "A fatal exception 0E has occurred at 0028:C0FFEE42 in VxD CSCLUB(01). The current application has been terminated because someone forgot a semicolon.",
+      "* Press any key to reboot. Unsaved memes will be lost.\n* Press CTRL+ALT+DEL to also reboot. There is no escape. Come to meetings."
+    ],
+    "prompt": "Press any key to continue"
+  }
+}
